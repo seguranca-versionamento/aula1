@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viweport" content="width=device-width" />
+		<link rel="stylesheet" href="estilo/estilo.css" />
+		<title>.:: Nível Games ::.</title>
+	</head>
+	<body>
+		<div id="container">
+			<header id="titulo">
+				<h1>Nível Games</h1>
+			</header>
+			<nav id="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="consoles.html">Consoles</a></li>
+					<li><a href="jogos.html">Jogos</a></li>
+					<li><a href="retro.html">Retro</a></li>
+					<li><a href="videos.html">Multimídia</a></li>
+					<li><a href="funcionamento.html">Horário</a></li>
+					<li><a href="comochegar.html">Como Chegar</a></li>
+					<li><a href="faleconosco.html">Fale Conosco</a></li>
+				</ul>
+			</nav>
+			<section>
+				<section>
+					<h1>Fale Conosco </h1>
+				</section>			
+				<form action="faleconosco2.html">
+					<fieldset class="grupo">
+						<legend>Dados Pessoais</legend>
+						<div class="formulario">
+							<label for="nome">Nome:</label>
+							<input type="text" id="nome" placeholder="Digite aqui o seu nome" title="Por favor, digite o nome completo" required />
+						</div>
+						<div class="formulario">
+							<label for="email">Email:</label>
+							<input type="email" id="email" placeholder="Digite aqui o seu e-mail" title="Campo Obrigatório e no formato de e-mail" required />
+						</div>
+						<div class="formulario">
+							<label for="idade">Idade:</label>
+							<input type="number" id="idade" min="0" placeholder="Digite sua idade" title="Campo Obrigatório e com idade mínima de 0 anos" required />
+						</div>
+						<div class="formulario">
+							<label>Sexo:</label>
+							<input type="radio" name="sexo" id="masculino" checked /><label for="masculino">Masculino</label>
+							<input type="radio" name="sexo" id="feminino" /><label for="feminino">Feminino</label>
+						</div>
+						<div class="formulario">
+							<label for="telefone">Telefone:</label>
+							<input type="tel" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" id="telefone" min="0" title="Digite no formato (xx) xxxxx-xxxx" placeholder="Digite seu telefone" />
+						</div>
+					</fieldset>
+					<fieldset class="grupo">
+						<legend>Mensagem</legend>
+						<div class="formulario">
+							<label for="assunto">Assunto</label>
+							<select name="assunto" id="assunto">
+								<option>Criticas</option>
+								<option>Sugestões</option>
+								<option>Compras</option>
+								<option>Outros</option>
+							</select>
+						</div>
+						<div class="formulario">
+							<label for="mensagem">Mensagem</label><br />
+							<textarea id="mensagem" cols="30" rows="6"></textarea>
+						</div>
+						<div class="formulario">
+							<button type="submit">Enviar informações</button>
+						</div>
+					</fieldset>
+				</form>
+			</section>
+			<footer>
+				<p>Rua Coronel Agostinho, 34. Telefone (21) 2412-2165</p>
+			</footer>
+		<div>
+	</body>
+</html>
